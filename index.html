@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ครัวบ้านไทย | Thai Kitchen Restaurant</title>
+    <meta name="description" content="ร้านอาหารไทยแท้ รสชาติต้นตำรับ ต้มยำกุ้ง ปลากระพงทอดน้ำปลา">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">🍜</span>
+                <span class="logo-text">ครัวบ้านไทย</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">หน้าแรก</a></li>
+                <li><a href="#menu">เมนู</a></li>
+                <li><a href="#about">เกี่ยวกับเรา</a></li>
+                <li><a href="#contact">ติดต่อ</a></li>
+            </ul>
+            <a href="#reservation" class="btn btn-primary">จองโต๊ะ</a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-badge">🌶️ อาหารไทยแท้ ต้นตำรับ</span>
+            <h1 class="hero-title">
+                รสชาติที่คุณ<br>
+                <span class="gradient-text">จะหลงรัก</span>
+            </h1>
+            <p class="hero-description">
+                สัมผัสประสบการณ์อาหารไทยแท้ รสชาติต้นตำรับจากเชฟมือฉมัง
+                วัตถุดิบสดใหม่ทุกวัน พร้อมบรรยากาศอบอุ่นเหมือนอยู่บ้าน
+            </p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary btn-lg">
+                    <span>ดูเมนู</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+                <a href="#about" class="btn btn-outline btn-lg">เกี่ยวกับเรา</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">ปีประสบการณ์</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">เมนูอาหาร</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">10K+</span>
+                    <span class="stat-label">ลูกค้าประทับใจ</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="floating-card card-1">
+                <span>⭐ 4.9</span>
+                <small>รีวิว 2,000+</small>
+            </div>
+            <div class="floating-card card-2">
+                <span>🔥</span>
+                <small>ขายดี!</small>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="featured">
+        <div class="container">
+            <div class="featured-grid">
+                <div class="featured-item">
+                    <div class="featured-icon">🍳</div>
+                    <h3>วัตถุดิบสดใหม่</h3>
+                    <p>คัดสรรวัตถุดิบคุณภาพดีทุกวัน</p>
+                </div>
+                <div class="featured-item">
+                    <div class="featured-icon">👨‍🍳</div>
+                    <h3>เชฟมืออาชีพ</h3>
+                    <p>ประสบการณ์กว่า 15 ปี</p>
+                </div>
+                <div class="featured-item">
+                    <div class="featured-icon">🚗</div>
+                    <h3>จัดส่งถึงบ้าน</h3>
+                    <p>ส่งฟรีในระยะ 5 กม.</p>
+                </div>
+                <div class="featured-item">
+                    <div class="featured-icon">💯</div>
+                    <h3>รสชาติต้นตำรับ</h3>
+                    <p>สูตรดั้งเดิมแท้ๆ</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">เมนูแนะนำ</span>
+                <h2 class="section-title">อาหารจานเด็ด</h2>
+                <p class="section-description">เมนูยอดนิยมที่ลูกค้าติดใจ สั่งซ้ำทุกครั้งที่มา</p>
+            </div>
+
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all">ทั้งหมด</button>
+                <button class="category-btn" data-category="soup">ต้ม/แกง</button>
+                <button class="category-btn" data-category="fried">ทอด/ผัด</button>
+                <button class="category-btn" data-category="salad">ยำ/สลัด</button>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Menu Item 1 -->
+                <div class="menu-card" data-category="soup">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1548943487-a2e4e43b4853?w=400&h=300&fit=crop"
+                            alt="ต้มยำกุ้ง">
+                        <span class="menu-badge hot">🔥 ขายดี</span>
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header">
+                            <h3>ต้มยำกุ้งน้ำข้น</h3>
+                            <span class="spicy-level">🌶️🌶️🌶️</span>
+                        </div>
+                        <p>ต้มยำกุ้งแม่น้ำตัวใหญ่ น้ำข้นเข้มข้น รสจัดจ้าน</p>
+                        <div class="menu-footer">
+                            <span class="price">฿ 350</span>
+                            <button class="btn btn-sm btn-primary">สั่งเลย</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Item 2 -->
+                <div class="menu-card" data-category="fried">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?w=400&h=300&fit=crop"
+                            alt="ปลากระพงทอด">
+                        <span class="menu-badge">แนะนำ</span>
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header">
+                            <h3>ปลากระพงทอดน้ำปลา</h3>
+                            <span class="spicy-level">🌶️</span>
+                        </div>
+                        <p>ปลากระพงทอดกรอบนอกนุ่มใน ราดน้ำปลาสูตรเด็ด</p>
+                        <div class="menu-footer">
+                            <span class="price">฿ 450</span>
+                            <button class="btn btn-sm btn-primary">สั่งเลย</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Item 3 -->
+                <div class="menu-card" data-category="fried">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=400&h=300&fit=crop"
+                            alt="ผัดกะเพรา">
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header">
+                            <h3>ผัดกะเพราหมูกรอบ</h3>
+                            <span class="spicy-level">🌶️🌶️</span>
+                        </div>
+                        <p>หมูกรอบผัดกะเพราใบโหระพาสด ไข่ดาวกรอบ</p>
+                        <div class="menu-footer">
+                            <span class="price">฿ 120</span>
+                            <button class="btn btn-sm btn-primary">สั่งเลย</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Item 4 -->
+                <div class="menu-card" data-category="soup">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1607330289024-1535c6b4e1c1?w=400&h=300&fit=crop"
+                            alt="แกงเขียวหวาน">
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header">
+                            <h3>แกงเขียวหวานไก่</h3>
+                            <span class="spicy-level">🌶️🌶️</span>
+                        </div>
+                        <p>แกงเขียวหวานกะทิแท้ เนื้อไก่นุ่ม มะเขือพวง</p>
+                        <div class="menu-footer">
+                            <span class="price">฿ 180</span>
+                            <button class="btn btn-sm btn-primary">สั่งเลย</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Item 5 -->
+                <div class="menu-card" data-category="salad">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1562967914-608f82629710?w=400&h=300&fit=crop"
+                            alt="ส้มตำไทย">
+                        <span class="menu-badge hot">🔥 ขายดี</span>
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header">
+                            <h3>ส้มตำไทย</h3>
+                            <span class="spicy-level">🌶️🌶️🌶️</span>
+                        </div>
+                        <p>ส้มตำมะละกอสด รสเปรี้ยว เผ็ด หวาน กลมกล่อม</p>
+                        <div class="menu-footer">
+                            <span class="price">฿ 80</span>
+                            <button class="btn btn-sm btn-primary">สั่งเลย</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Item 6 -->
+                <div class="menu-card" data-category="salad">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1569562211093-4ed0d0758f12?w=400&h=300&fit=crop"
+                            alt="ยำวุ้นเส้น">
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header">
+                            <h3>ยำวุ้นเส้นทะเล</h3>
+                            <span class="spicy-level">🌶️🌶️</span>
+                        </div>
+                        <p>วุ้นเส้นยำกับซีฟู้ดสดใหม่ รสจัดจ้าน</p>
+                        <div class="menu-footer">
+                            <span class="price">฿ 220</span>
+                            <button class="btn btn-sm btn-primary">สั่งเลย</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-cta">
+                <a href="#" class="btn btn-outline btn-lg">ดูเมนูทั้งหมด →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-images">
+                    <div class="about-img-1">
+                        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=500&h=600&fit=crop"
+                            alt="บรรยากาศร้าน">
+                    </div>
+                    <div class="about-img-2">
+                        <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=300&h=300&fit=crop"
+                            alt="อาหาร">
+                    </div>
+                    <div class="experience-badge">
+                        <span class="exp-number">15</span>
+                        <span class="exp-text">ปี<br>ประสบการณ์</span>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <span class="section-badge">เกี่ยวกับเรา</span>
+                    <h2 class="section-title">เรื่องราวของ<br><span class="gradient-text">ครัวบ้านไทย</span></h2>
+                    <p class="about-text">
+                        ก่อตั้งขึ้นเมื่อปี 2553 ด้วยความรักในอาหารไทยและความตั้งใจที่จะส่งต่อรสชาติแท้ๆ
+                        จากครัวบ้านสู่โต๊ะอาหารของคุณ เราคัดสรรวัตถุดิบสดใหม่ทุกวัน
+                        ปรุงด้วยสูตรดั้งเดิมที่สืบทอดมากว่า 3 รุ่น
+                    </p>
+                    <ul class="about-features">
+                        <li>
+                            <span class="feature-icon">✓</span>
+                            <span>วัตถุดิบสดใหม่ คัดสรรทุกวัน</span>
+                        </li>
+                        <li>
+                            <span class="feature-icon">✓</span>
+                            <span>สูตรดั้งเดิม สืบทอด 3 รุ่น</span>
+                        </li>
+                        <li>
+                            <span class="feature-icon">✓</span>
+                            <span>ไม่ใส่ผงชูรส ปลอดภัยต่อสุขภาพ</span>
+                        </li>
+                        <li>
+                            <span class="feature-icon">✓</span>
+                            <span>บรรยากาศอบอุ่น เหมือนอยู่บ้าน</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary btn-lg">ติดต่อเรา</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section class="reservation" id="reservation">
+        <div class="container">
+            <div class="reservation-wrapper">
+                <div class="reservation-info">
+                    <span class="section-badge light">จองโต๊ะ</span>
+                    <h2 class="section-title light">สำรองที่นั่ง<br>ล่วงหน้า</h2>
+                    <p>สำรองที่นั่งเพื่อประสบการณ์ที่ดีที่สุด ทีมงานพร้อมให้บริการคุณด้วยความใส่ใจ</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <div>
+                                <strong>โทรจอง</strong>
+                                <p>02-123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">🕐</span>
+                            <div>
+                                <strong>เวลาเปิดทำการ</strong>
+                                <p>10:00 - 22:00 น. (ทุกวัน)</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <div>
+                                <strong>ที่ตั้ง</strong>
+                                <p>123 ถ.สุขุมวิท กรุงเทพฯ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reservation-form-container">
+                    <form class="reservation-form" id="reservationForm">
+                        <h3>กรอกข้อมูลจองโต๊ะ</h3>
+                        <div class="form-group">
+                            <label for="name">ชื่อ-นามสกุล</label>
+                            <input type="text" id="name" name="name" placeholder="กรุณากรอกชื่อ" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">เบอร์โทรศัพท์</label>
+                                <input type="tel" id="phone" name="phone" placeholder="08X-XXX-XXXX" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">อีเมล</label>
+                                <input type="email" id="email" name="email" placeholder="email@example.com">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">วันที่</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">เวลา</label>
+                                <input type="time" id="time" name="time" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">จำนวนท่าน</label>
+                            <select id="guests" name="guests" required>
+                                <option value="">เลือกจำนวน</option>
+                                <option value="1">1 ท่าน</option>
+                                <option value="2">2 ท่าน</option>
+                                <option value="3">3 ท่าน</option>
+                                <option value="4">4 ท่าน</option>
+                                <option value="5">5 ท่าน</option>
+                                <option value="6+">มากกว่า 5 ท่าน</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="notes">หมายเหตุ (ถ้ามี)</label>
+                            <textarea id="notes" name="notes" rows="3"
+                                placeholder="ข้อมูลเพิ่มเติม เช่น โต๊ะวันเกิด, แพ้อาหาร"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">ยืนยันจองโต๊ะ</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-badge">ติดต่อเรา</span>
+                <h2 class="section-title">มาเยี่ยมเราได้ที่</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.5466!2d100.5666!3d13.7466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDQ0JzQ4LjAiTiAxMDDCsDMzJzU5LjgiRQ!5e0!3m2!1sth!2sth!4v1"
+                        width="100%" height="400" style="border:0; border-radius: 20px;" allowfullscreen=""
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">🍜</span>
+                        <span class="logo-text">ครัวบ้านไทย</span>
+                    </a>
+                    <p>ร้านอาหารไทยแท้ รสชาติต้นตำรับ<br>ที่คุณจะหลงรัก</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📸</a>
+                        <a href="#" class="social-link">🐦</a>
+                        <a href="#" class="social-link">📺</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>ลิงก์ด่วน</h4>
+                    <ul>
+                        <li><a href="#home">หน้าแรก</a></li>
+                        <li><a href="#menu">เมนู</a></li>
+                        <li><a href="#about">เกี่ยวกับเรา</a></li>
+                        <li><a href="#reservation">จองโต๊ะ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>เวลาเปิดทำการ</h4>
+                    <ul class="hours">
+                        <li><span>จันทร์ - ศุกร์</span><span>10:00 - 22:00</span></li>
+                        <li><span>เสาร์ - อาทิตย์</span><span>09:00 - 23:00</span></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>ติดต่อเรา</h4>
+                    <ul class="contact-list">
+                        <li>📍 123 ถ.สุขุมวิท กรุงเทพฯ 10110</li>
+                        <li>📞 02-123-4567</li>
+                        <li>📧 info@kruabanthai.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ครัวบ้านไทย. สงวนลิขสิทธิ์.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
